@@ -2,56 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Formulario</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
   </head>
   <body>
-    <main class="create">
-      <p class="login">
-        Already have an account?
-        <a href="#" class="signin">Sign in</a>
-      </p>
-      <article class="content">
-        <h1>Have a question about this product?</h1>
-        <p class="question">
-          Have a question about this product? Sign up for free account to open
-          an issue and contact its maintainers.
+    <main>
+      <img src="/images/image-product-desktop.jpg" alt="" class="perfume" />
+      <article>
+        <h2>PERFUME</h2>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-
-        <div class="form">
-          <form action="#" method="post">
-            <label for="username">Pick a username</label>
-            <input type="text" id="username" placeholder="username" />
-          </form>
-          <form action="#">
-            <label for="email">Your email adress</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email adress"
-            />
-          </form>
-          <form action="#">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter a password"
-            />
-            <input class="btn" type="submit" value="Sign Up" />
-          </form>
+        <section class="price">
+          <div class="new">$149.99</div>
+          <div class="older">$169.99</div>
+        </section>
+        <div class="cart">
+          <img src="/images/cart.png" alt="cart" class="icon" />
+          <div class="textbtn">Add to Cart</div>
         </div>
       </article>
-      <section class="legal">
-        <p class="legal">
-          By clicking “Sign Up”, you agree to our
-          <a href="#">terms of service</a> and
-          <a href="#">privacy statement</a> . We'll occasionally send you
-          account related emails.
-        </p>
-      </section>
     </main>
+
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/dabocher/form-sign-in-uidaily-challenge"
+        >David Botello</a
+      >.
+    </div>
   </body>
 </html>
